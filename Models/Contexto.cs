@@ -19,6 +19,8 @@ namespace ProjetoFundacaoCrianca.Models
         public DbSet<PerfilSocioEconomico> PerfisSociosEconomicos { get; set; }
         public DbSet<Professor> Professores { get; set; }
         public DbSet<Turma> Turmas { get; set; }
+        public DbSet<Visita> Visitas { get; set; }
+        public DbSet<Atendimento> Atendimentos { get; set; }
 
 
 
