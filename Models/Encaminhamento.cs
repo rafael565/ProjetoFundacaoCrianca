@@ -27,7 +27,7 @@ namespace ProjetoFundacaoCrianca.Models
         public string motivo { get; set; }
 
         [Display(Name = "Data do Encaminhamento: ")]
-        public DateTime DatadeEncaminhamenti { get; set; }
+        public DateTime DatadeEncaminhamento { get; set; }
 
 
 

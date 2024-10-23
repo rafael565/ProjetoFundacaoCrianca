@@ -56,7 +56,7 @@ namespace ProjetoFundacaoCrianca.Models
 
         [Required(ErrorMessage = "Campo email é obrigatório")]
         [StringLength(50)]
-        [Display(Name = "email : ")]
+        [Display(Name = "E-mail do responsável: ")]
         public string email { get; set; }
 
 
