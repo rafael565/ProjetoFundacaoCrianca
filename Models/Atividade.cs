@@ -5,7 +5,7 @@ namespace ProjetoFundacaoCrianca.Models
 {
     [Table("Atividades")]
     public class Atividade
-    {
+    {//Testando
         [Display(Name = "ID: ")]
         public int id { get; set; }
 
