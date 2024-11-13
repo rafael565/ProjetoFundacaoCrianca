@@ -19,13 +19,57 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                       
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="publicoAlvoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cadastro
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="publicoAlvoDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Alunos" asp-action="Index">Alunos</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="DadosFamilias" asp-action="Index">Dados das Famílias</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="PerfisSociosEconomicos" asp-action="Index">Perfis Socioeconômicos</a></li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="assistenciaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Atendimentos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="assistenciaDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="AssistentesSociais" asp-action="Index">Assistentes Sociais</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Atendimentos" asp-action="Index">Atendimentos</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Encaminhamentos" asp-action="Index">Encaminhamentos</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Visitas" asp-action="Index">Visitas</a></li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="academicoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Academico
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="academicoDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Cursos" asp-action="Index">Cursos</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Matriculas" asp-action="Index">Matrículas</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Professores" asp-action="Index">Professores</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Turmas" asp-action="Index">Turmas</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Atividades" asp-action="Index">Atividades</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Chamadas" asp-action="Index">Chamadas</a></li>
+                            </ul>
+                        </li>
+
+                       
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Entidades" asp-action="Index">Entidades</a>
                         </li>
                     </ul>
+
                     <partial name="_LoginPartial" />
                 </div>
             </div>
