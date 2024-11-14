@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoFundacaoCrianca.Models
 {
-    public enum genero {Masculino, Feminino}
-    public enum escolaridade {Fundamental, Medio}
+    public enum Genero {Masculino, Feminino}
+    public enum Escolaridade {Fundamental, Medio}
     [Table("Alunos")]
     public class Aluno
     {
@@ -24,22 +24,22 @@ namespace ProjetoFundacaoCrianca.Models
         [Required(ErrorMessage = "Campo CPF é obrigatório")]
         [StringLength(35)]
         [Display(Name = "Cpf: ")]
-        public string cpf { get; set; }
+        public long cpf { get; set; }
 
 
         [Required(ErrorMessage = "Campo Genero é obrigatório")]
         
         [Display(Name = "Genero: ")]
-        public int genero{ get; set; }
+        public Genero genero{ get; set; }
 
         [Required(ErrorMessage = "Campo Escolaridade é obrigatório")]
         [StringLength(35)]
         [Display(Name = "Escolaridade: ")]
-        public string escolaridade { get; set; }
+        public Escolaridade escolaridade { get; set; }
 
 
         [Display(Name = "Data de Nascimento: ")]
-        public DateTime DatadeNascimento { get; set; }
+        public DateOnly DatadeNascimento { get; set; }
 
 
 
