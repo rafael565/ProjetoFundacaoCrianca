@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoFundacaoCrianca.Models
 {
+    public enum genero {Masculino, Feminino}
+    public enum escolaridade {Fundamental, Medio}
     [Table("Alunos")]
     public class Aluno
     {
