@@ -46,7 +46,7 @@ namespace ProjetoFundacaoCrianca.Controllers
 
             contexto.SaveChanges();
 
-            return View(contexto.alunos.OrderBy(o => o.id).ToList());
+            return View(contexto.Alunos.OrderBy(o => o.id).ToList());
         }
     }
 }
